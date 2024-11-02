@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AR Quick Look</title>
+  <title>SeekAR Experience</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <style>
     body {
       display: flex;
@@ -11,8 +12,7 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      background-color: #000;
     }
     .ar-container {
       text-align: center;
@@ -21,25 +21,19 @@
       max-width: 300px;
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
       transition: transform 0.2s;
     }
     .ar-link img:hover {
       transform: scale(1.05);
     }
-    .ar-description {
-      margin-top: 1em;
-      font-size: 1.1em;
-      color: #333;
-    }
   </style>
 </head>
 <body>
   <div class="ar-container">
-    <a class="ar-link" rel="ar" href="https://seekarmobile.github.io/seekarpublic/seekar.usdz">
+    <a class="ar-link" rel="ar" href="https://seekarmobile.github.io/seekarpublic/seekar.usdz" target="_blank">
       <img src="https://seekarmobile.github.io/seekarpublic/thumb.jpg" alt="AR Model Preview">
     </a>
-    <p class="ar-description">Click the image to view the model in AR.</p>
   </div>
 </body>
 </html>
