@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeekAR Experience</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000;
+    }
+    .ar-container {
+      text-align: center;
+    }
+    .ar-link img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+      transition: transform 0.2s;
+    }
+    .ar-link img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="ar-container">
+    <a class="ar-link" href="https://seekarmobile.github.io/seekarpublic/seekar.glb" 
+       target="_blank" 
+       rel="ar" 
+       data-mode="ar" 
+       data-title="SeekAR Model" 
+       data-ar>
+      <img src="https://seekarmobile.github.io/seekarpublic/thumb.jpg" alt="AR Model Preview">
+    </a>
+  </div>
+</body>
+</html>
